@@ -71,23 +71,23 @@ public class ResultadoEspecificoController extends HttpServlet{
     	//Solo descomentar las líneas necesarias, es decir resource y el get, en el if y el req.set
     	//Descomentar sólo la parte que vayais a utilizar y al acabar volver a comentar EXACTAMENTE igual
     	
-		YouTubeResource ytResource = new YouTubeResource();
+		/*YouTubeResource ytResource = new YouTubeResource();
         Item videos = ytResource.getVideos(title+" trailer pelicula");
         movieFinder.model.youtubeplaylist.Item playlists = ytResource.getPlaylist(title);
         
         AliExpressResource aeResource = new AliExpressResource();
-        AliExpress products = aeResource.getProducts(title);
+        AliExpress products = aeResource.getProducts(title);*/
         
         
-        if (movie != null && products != null  && videos != null && playlists != null) {
+        if (movie != null /*&& products != null  && videos != null && playlists != null*/) {
             
         	req.setAttribute("movieID", movieID);
         	req.setAttribute("title", title);
         	req.setAttribute("movie", movie);
         	
-        	req.setAttribute("videos",videos);
+        	/*req.setAttribute("videos",videos);
         	req.setAttribute("playlists",playlists);
-        	req.setAttribute("products",products);
+        	req.setAttribute("products",products);*/
         	if(message!=null) {
         		req.setAttribute("message", message);
         	}
