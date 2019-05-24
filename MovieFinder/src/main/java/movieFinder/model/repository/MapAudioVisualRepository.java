@@ -141,6 +141,11 @@ public void init() {
 		playlist.setDescription("A sample playlist");
 		addPlaylist(playlist);
 		
+		Playlist otra = new Playlist();
+		otra.setName("Favourites");
+		otra.setDescription("A sample playlist");
+		addPlaylist(otra);
+		
 		// Add songs to playlists
 		addSong(bohemianRhapsodyST.getId(), someBodyToLove.getId());
 		addSong(bohemianRhapsodyST.getId(), doingAllRightRevisited.getId());
@@ -157,6 +162,9 @@ public void init() {
 		
 		addSong(playlist.getId(), keepYourselfAlive.getId());
 		addSong(playlist.getId(), fatBottomedGirls.getId());
+		
+		addSong(otra.getId(), keepYourselfAlive.getId());
+		addSong(otra.getId(), fatBottomedGirls.getId());
 		
 		//Crear actores
 		Actor ramiMalek=new Actor();
@@ -189,6 +197,16 @@ public void init() {
 		bohemianRhapsodyFilm.setFechaEstreno("24-10-2018");
 		addPelicula(bohemianRhapsodyFilm);
 		
+		Pelicula endGame=new Pelicula();
+		endGame.setDirector("Joe Russo");
+		endGame.setFechaEstreno("22-04-2019");
+		addPelicula(endGame);
+		
+		Pelicula avatar=new Pelicula();
+		avatar.setDirector("James Cameron");
+		avatar.setFechaEstreno("12-09-2011");
+		addPelicula(avatar);
+		
 		//Crear Serie
 		Serie mrRobot=new Serie();
 		mrRobot.setTemporadas(4);
@@ -196,6 +214,19 @@ public void init() {
 		mrRobot.setCanal("Movistar Series");
 		mrRobot.setUltFechaEmision("13-11-2017");
 		addSerie(mrRobot);
+		
+		Serie skam=new Serie();
+		skam.setTemporadas(2);
+		skam.setEstreno("20-10-2018");
+		skam.setCanal("Movistar Series");
+		addSerie(skam);
+		
+		Serie alliAbajo=new Serie();
+		alliAbajo.setTemporadas(5);
+		alliAbajo.setEstreno("16-02-2014");
+		alliAbajo.setCanal("Antena 3");
+		alliAbajo.setUltFechaEmision("21-05-2019");
+		addSerie(alliAbajo);
 		
 		//Crear Tipo
 		Tipo pelicula=new Tipo();
@@ -221,6 +252,12 @@ public void init() {
 		addAudioVisual(mR);
 		addActor(mR.getId(),ramiMalek.getId());
 		addTipo(mR.getId(),serie.getId());
+		
+		AudioVisual mR2=new AudioVisual();
+		mR2.setName("Mr. Robot");
+		addAudioVisual(mR2);
+		addActor(mR2.getId(),ramiMalek.getId());
+		addTipo(mR2.getId(),serie.getId());
 		
 		
 	}

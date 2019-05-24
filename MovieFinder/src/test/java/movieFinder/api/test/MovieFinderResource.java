@@ -212,7 +212,7 @@ public class MovieFinderResource {
             cr.put(p, Pelicula.class);
             id = p.getId();
         } catch (ResourceException re) {
-            log.warning("Error when updating serie: " + cr.getResponse().getStatus());
+            log.warning("Error when updating movie: " + cr.getResponse().getStatus());
         }
         return id;
     }

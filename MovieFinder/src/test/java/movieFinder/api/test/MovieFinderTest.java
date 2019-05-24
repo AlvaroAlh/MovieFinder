@@ -43,7 +43,7 @@ public class MovieFinderTest {
 	@Test
 	public void testGetAudiovisualesId() throws UnsupportedEncodingException {
 		System.out.println("Test MovieFinder: Probando get audiovisual");
-		AudioVisual res = movieFinder.getAudiovisuales("av21");
+		AudioVisual res = movieFinder.getAudiovisuales("av26");
 
 		if (res.equals(null)) {
 			res = null;
@@ -92,12 +92,12 @@ public class MovieFinderTest {
 
 	}
 	
-	/*@Test
+	@Test
 	public void testPutAudiovisuales() throws UnsupportedEncodingException {
 		System.out.println("Test MovieFinder: Probando put audiovisual");
 		AudioVisual av = new AudioVisual();
 		av.setName("PRUEBA2");
-		av.setId("av25");
+		av.setId("av27");
 		
 		String res = movieFinder.updateAudioVisual(av);
 		
@@ -116,7 +116,7 @@ public class MovieFinderTest {
 	@Test
 	public void testDeleteAudiovisuales() throws UnsupportedEncodingException {
 		System.out.println("Test MovieFinder: Probando delete audiovisual");
-		String res = movieFinder.deleteAudioVisual("av25");
+		String res = movieFinder.deleteAudioVisual("av28");
 		
 		if (res.equals(null)) {
 			res = null;
@@ -127,7 +127,7 @@ public class MovieFinderTest {
 
 		assertNotNull("La id del audiovisual no puede ser null", res);
 
-	}*/
+	}
 	
 	@Test
 	public void testGetSeries() throws UnsupportedEncodingException {
@@ -148,7 +148,7 @@ public class MovieFinderTest {
 	@Test
 	public void testGetSerieId() throws UnsupportedEncodingException {
 		System.out.println("Test MovieFinder: Probando get serie");
-		Serie res = movieFinder.getSeries("s18");
+		Serie res = movieFinder.getSeries("s21");
 
 		if (res.equals(null)) {
 			res = null;
@@ -184,12 +184,12 @@ public class MovieFinderTest {
 
 	}
 	
-	/*@Test
+	@Test
 	public void testPutSerie() throws UnsupportedEncodingException {
 		System.out.println("Test MovieFinder: Probando put serie");
 		Serie s = new Serie();
 		s.setCanal("Prueba");
-		s.setId("s31");
+		s.setId("s22");
 		
 		String res = movieFinder.updateSerie(s);
 		
@@ -208,7 +208,7 @@ public class MovieFinderTest {
 	@Test
 	public void testDeleteSerie() throws UnsupportedEncodingException {
 		System.out.println("Test MovieFinder: Probando delete serie");
-		String res = movieFinder.deleteSerie("s31");
+		String res = movieFinder.deleteSerie("s23");
 		
 		if (res.equals(null)) {
 			res = null;
@@ -219,7 +219,7 @@ public class MovieFinderTest {
 
 		assertNotNull("La id de la serie no puede ser null", res);
 
-	}*/
+	}
 	
 	@Test
 	public void testGetPeliculas() throws UnsupportedEncodingException {
@@ -240,7 +240,7 @@ public class MovieFinderTest {
 	@Test
 	public void testGetPeliculaId() throws UnsupportedEncodingException {
 		System.out.println("Test MovieFinder: Probando get pelicula");
-		Pelicula res = movieFinder.getPeliculas("pe17");
+		Pelicula res = movieFinder.getPeliculas("pe18");
 
 		if (res.equals(null)) {
 			res = null;
@@ -274,12 +274,12 @@ public class MovieFinderTest {
 
 	}
 	
-	/*@Test
+	@Test
 	public void testPutPelicula() throws UnsupportedEncodingException {
 		System.out.println("Test MovieFinder: Probando put pelicula");
 		Pelicula p = new Pelicula();
 		p.setDirector("Christopher Nolan");
-		p.setId("p35");
+		p.setId("pe19");
 		
 		String res = movieFinder.updatePelicula(p);
 		
@@ -298,7 +298,7 @@ public class MovieFinderTest {
 	@Test
 	public void testDeletePelicula() throws UnsupportedEncodingException {
 		System.out.println("Test MovieFinder: Probando delete pelicula");
-		String res = movieFinder.deletePelicula("pe35");
+		String res = movieFinder.deletePelicula("pe20");
 		
 		if (res.equals(null)) {
 			res = null;
@@ -309,7 +309,7 @@ public class MovieFinderTest {
 
 		assertNotNull("La id de la pelicula no puede ser null", res);
 
-	}*/
+	}
 	
 	@Test
 	public void testGetActores() throws UnsupportedEncodingException {
@@ -330,7 +330,7 @@ public class MovieFinderTest {
 	@Test
 	public void testGetActoresId() throws UnsupportedEncodingException {
 		System.out.println("Test MovieFinder: Probando get actor");
-		Actor res = movieFinder.getActores("a14");
+		Actor res = movieFinder.getActores("a15");
 
 		if (res.equals(null)) {
 			res = null;
@@ -365,12 +365,12 @@ public class MovieFinderTest {
 
 	}
 	
-	/*@Test
+	@Test
 	public void testPutActor() throws UnsupportedEncodingException {
 		System.out.println("Test MovieFinder: Probando put actor");
 		Actor a = new Actor();
 		a.setNombre("Prueba");
-		a.setId("a42");
+		a.setId("a16");
 		
 		String res = movieFinder.updateActor(a);
 		
@@ -389,7 +389,7 @@ public class MovieFinderTest {
 	@Test
 	public void testDeleteActor() throws UnsupportedEncodingException {
 		System.out.println("Test MovieFinder: Probando delete actor");
-		String res = movieFinder.deleteActor("a41");
+		String res = movieFinder.deleteActor("a17");
 		
 		if (res.equals(null)) {
 			res = null;
@@ -400,7 +400,7 @@ public class MovieFinderTest {
 
 		assertNotNull("El id de actor no puede ser null", res);
 
-	}*/
+	}
 	
 	@Test
 	public void testGetSongs() throws UnsupportedEncodingException {
@@ -456,12 +456,12 @@ public class MovieFinderTest {
 
 	}
 	
-	/*@Test
+	@Test
 	public void testPutSong() throws UnsupportedEncodingException {
 		System.out.println("Test MovieFinder: Probando put song");
 		Song s = new Song();
 		s.setTitle("Prueba");
-		s.setId("so45");
+		s.setId("so0");
 		
 		String res = movieFinder.updateSong(s);
 		
@@ -480,7 +480,7 @@ public class MovieFinderTest {
 	@Test
 	public void testDeleteSong() throws UnsupportedEncodingException {
 		System.out.println("Test MovieFinder: Probando delete song");
-		String res = movieFinder.deleteSong("so45");
+		String res = movieFinder.deleteSong("so1");
 		
 		if (res.equals(null)) {
 			res = null;
@@ -491,7 +491,7 @@ public class MovieFinderTest {
 
 		assertNotNull("El id de song no puede ser null", res);
 
-	}*/
+	}
 	
 	@Test
 	public void testGetPlaylists() throws UnsupportedEncodingException {
@@ -546,11 +546,11 @@ public class MovieFinderTest {
 
 	}
 	
-	/*@Test
+	@Test
 	public void testPutPlaylist() throws UnsupportedEncodingException {
 		System.out.println("Test MovieFinder: Probando put playlist");
 		Playlist p = new Playlist();
-		p.setId("p46");
+		p.setId("p13");
 		p.setName("LaVidaModerna");
 		
 		String res = movieFinder.updatePlaylist(p);
@@ -570,7 +570,7 @@ public class MovieFinderTest {
 	@Test
 	public void testDeletePlaylist() throws UnsupportedEncodingException {
 		System.out.println("Test MovieFinder: Probando delete playlist");
-		String res = movieFinder.deletePlaylist("p46");
+		String res = movieFinder.deletePlaylist("p14");
 		
 		if (res.equals(null)) {
 			res = null;
@@ -581,12 +581,12 @@ public class MovieFinderTest {
 
 		assertNotNull("El id de playlist no puede ser null", res);
 
-	}*/
+	}
 	
 	@Test
 	public void testGetTipoId() throws UnsupportedEncodingException {
 		System.out.println("Test MovieFinder: Probando get tipo");
-		Tipo res = movieFinder.getTipo("t20");
+		Tipo res = movieFinder.getTipo("t24");
 
 		if (res.equals(null)) {
 			res = null;
