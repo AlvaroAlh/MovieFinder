@@ -10,7 +10,6 @@ import movieFinder.model.aliexpress.AliExpress;
 import movieFinder.model.resource.AliExpressResource;
 
 public class AliExpressResourceTests {
-	/* DESCOMENTAR PARA LA DEFENSA YA QUE ALIEXPRESS ES LIMITADO
 	AliExpressResource aliexpress = new AliExpressResource();
 	
 	@Test
@@ -29,5 +28,5 @@ public class AliExpressResourceTests {
 
 		assertNotNull("La lista de productos no puede ser null", res);
 
-	}*/
+	}
 }

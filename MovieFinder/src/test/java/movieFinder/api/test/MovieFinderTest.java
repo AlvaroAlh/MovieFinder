@@ -23,7 +23,7 @@ public class MovieFinderTest {
 	
 	
 	MovieFinderResource movieFinder = new MovieFinderResource();
-	
+	/* AudioVisual */ 
 	@Test
 	public void testGetAudiovisuales() throws UnsupportedEncodingException {
 		System.out.println("Test MovieFinder: Probando getAll audiovisual");
@@ -128,7 +128,7 @@ public class MovieFinderTest {
 		assertNotNull("La id del audiovisual no puede ser null", res);
 
 	}
-	
+	/* Series */ 
 	@Test
 	public void testGetSeries() throws UnsupportedEncodingException {
 		System.out.println("Test MovieFinder: Probando getAll serie");
@@ -220,7 +220,7 @@ public class MovieFinderTest {
 		assertNotNull("La id de la serie no puede ser null", res);
 
 	}
-	
+	/* Pelicula */
 	@Test
 	public void testGetPeliculas() throws UnsupportedEncodingException {
 		System.out.println("Test MovieFinder: Probando getAll pelicula");
@@ -310,7 +310,7 @@ public class MovieFinderTest {
 		assertNotNull("La id de la pelicula no puede ser null", res);
 
 	}
-	
+	/* Actor */
 	@Test
 	public void testGetActores() throws UnsupportedEncodingException {
 		System.out.println("Test MovieFinder: Probando getAll actor");
@@ -401,7 +401,7 @@ public class MovieFinderTest {
 		assertNotNull("El id de actor no puede ser null", res);
 
 	}
-	
+	/* Song */
 	@Test
 	public void testGetSongs() throws UnsupportedEncodingException {
 		System.out.println("Test MovieFinder: Probando getAll song");
@@ -492,7 +492,7 @@ public class MovieFinderTest {
 		assertNotNull("El id de song no puede ser null", res);
 
 	}
-	
+	/* Playlist */
 	@Test
 	public void testGetPlaylists() throws UnsupportedEncodingException {
 		System.out.println("Test MovieFinder: Probando getAll playlist");
@@ -583,6 +583,7 @@ public class MovieFinderTest {
 
 	}
 	
+	/* Tipo */ 
 	@Test
 	public void testGetTipoId() throws UnsupportedEncodingException {
 		System.out.println("Test MovieFinder: Probando get tipo");

@@ -16,7 +16,7 @@ public class TMDBResourcesTests {
 
 	TmdbResource tmdb = new TmdbResource();
 
-	/*@Test
+	@Test
 	public void testSearchMovie() throws UnsupportedEncodingException {
 		String busqueda = "EndGame";
 		System.out.println("Test TMDB: Probando búsqueda de películas de " + busqueda);
@@ -32,13 +32,13 @@ public class TMDBResourcesTests {
 
 		assertNotNull("La lista de películas no puede ser null", res);
 
-	}*/
+	}
 	
-	/*@Test
+	@Test
 	public void testDiscoverMovie() throws UnsupportedEncodingException {
-		String busqueda = "Español";
+		String busqueda = "es-Es";
 		System.out.println("Test TMDB: Probando búsqueda de películas en " + busqueda);
-		movieFinder.model.tmdbMovies.TmdbMovies res = tmdb.discoverMovie(busqueda);
+		movieFinder.model.tmdbMovies.TmdbMovies res = tmdb.discoverMovie(busqueda, "random", "noOrder", "", null, "all", "", "estreno");
 
 		// La siguiente línea es para traducir cuando no hay resultados
 		if (res.equals(null)) {
@@ -50,25 +50,6 @@ public class TMDBResourcesTests {
 
 		assertNotNull("La lista de películas no puede ser null", res);
 
-	}*/
-	
-	/*@Test
-	public void testgetWatchlist() throws UnsupportedEncodingException {
-		//POR HACER
-		String s = "";
-		System.out.println("Test TMDB: Probando búsqueda de películas en " + s);
-		movieFinder.model.tmdbWatchlist.TmdbWatchlist res = tmdb.getWatchlist(s);
-
-		// La siguiente línea es para traducir cuando no hay resultados
-		if (res.equals(null)) {
-			res = null;
-		}
-		if (res != null) {
-			System.out.println("Encontrado Correctamente");
-		}
-
-		assertNotNull("La lista de películas no puede ser null", res);
-
-	}*/
+	}
 	
 }

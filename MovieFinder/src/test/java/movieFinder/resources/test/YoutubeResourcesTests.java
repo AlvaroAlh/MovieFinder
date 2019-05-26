@@ -14,7 +14,7 @@ public class YoutubeResourcesTests {
 
 	YouTubeResource youtube = new YouTubeResource();
 
-	/*@Test
+	@Test
 	public void testGetVideos() throws UnsupportedEncodingException {
 		String busqueda = "EndGame";
 		System.out.println("Test YouTube: Probando búsqueda de vídeos de " + busqueda);
@@ -48,6 +48,6 @@ public class YoutubeResourcesTests {
 
 		assertNotNull("La playlist no puede ser null", res);
 
-	}*/
+	}
 	
 }

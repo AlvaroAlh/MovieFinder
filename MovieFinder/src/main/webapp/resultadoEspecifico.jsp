@@ -94,7 +94,7 @@
     	 Está primero el video de youtube, después el div es AliExpress y lo último es la playlist de youtube
     	 Descomentar sólo la parte que vayais a utilizar y al acabar volver a comentar EXACTAMENTE igual -->
    
-     <!--<h2 class="h2">Búsqueda de trailler en youtube</h2>
+    <h2 class="h2">Búsqueda de trailler en youtube</h2>
     	<iframe class="trailer" width="560" height="315" src="https://www.youtube.com/embed/${requestScope.videos.id.videoId}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
     <h3 class="h3">Búsqueda de soundtracks en youtube</h3>
@@ -111,7 +111,7 @@
         		<img src="${product.imageUrl}" width="200" height="200"/>
         		</div>
         	</c:forEach>
-    -->
+
     <a href="javascript:history.back()"> Volver Atrás</a>
     <form action="/paginaPrincipalController">
     	<input type='hidden' name='SessionID' value='${requestScope.sessionID}' required>

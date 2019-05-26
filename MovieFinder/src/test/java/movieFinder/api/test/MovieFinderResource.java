@@ -16,7 +16,7 @@ public class MovieFinderResource {
     public MovieFinderResource() {
     	
     }
-    
+    /* AudioVisual*/
     public AudioVisual[] getAudiovisuales() {
         ClientResource cr = null;
         AudioVisual[] audiovisuales = null;
@@ -87,7 +87,7 @@ public class MovieFinderResource {
         }
         return res;
     }
-    
+    /* Series */
     public Serie[] getSeries() {
         ClientResource cr = null;
         Serie[] series = null;
@@ -158,7 +158,7 @@ public class MovieFinderResource {
         }
         return res;
     }
-    
+    /* Peliculas */
     public Pelicula[] getPeliculas() {
         ClientResource cr = null;
         Pelicula[] peliculas = null;
@@ -229,7 +229,7 @@ public class MovieFinderResource {
         }
         return res;
     }
-    
+    /* Actor */
     public Actor[] getActores() {
         ClientResource cr = null;
         Actor[] actores = null;
@@ -300,7 +300,7 @@ public class MovieFinderResource {
         }
         return res;
     }
-    
+    /* Song */
     public Song[] getSongs() {
         ClientResource cr = null;
         Song[] songs = null;
@@ -371,7 +371,7 @@ public class MovieFinderResource {
         }
         return res;
     }
-    
+    /* Playlist */
     public Playlist[] getPlaylists() {
         ClientResource cr = null;
         Playlist[] lists = null;
@@ -443,6 +443,7 @@ public class MovieFinderResource {
         return res;
     }
     
+    /* Tipo */
     public Tipo getTipo(String id) {
         ClientResource cr = null;
         Tipo tipo = null;
